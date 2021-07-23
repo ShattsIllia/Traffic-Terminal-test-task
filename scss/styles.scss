@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+$main-font: "Lato";
+$second-font: "Josefin Sans";
+$main-color: #c4b2d3;
+$second-color: #ffffff;
+$orange-color: #ffb400;
+$buttons-background: linear-gradient(to top,
+#ff7214,
+#ffb702);
+@mixin h1-title {
+    font: {
+        family: $second-font;
+        size: 3.6rem;
+        weight: bold;
+    }
+    color: $second-color;
+}
+
+@mixin h2-title {
+    font: {
+        family: $second-font;
+        size: 2rem;
+    }
+    color: $second-color;
+}
+
+@mixin main-paragraph {
+    font: {
+        family: $main-font;
+        size: 1.6rem;
+    }
+    line-height: 2.6rem;
+    color: $main-color;
+}
+
+@mixin old-price {
+    font: {
+        family: $main-font;
+        size: 1.4rem;
+    }
+    line-height: 4rem;
+    color: #8a7a98;
+    text-decoration: line-through;
+}
+
+@mixin new-price {
+    font: {
+        family: $main-font;
+        size: 2rem;
+    }
+    line-height: 4rem;
+    color: #ff6c84
+}
+
+@mixin deal {
+    font: {
+        family: $main-font;
+        size: 2rem;
+    }
+    line-height: 4rem;
+    color: $second-color;
+}
+
+@mixin top-games-title {
+    font: {
+        family: $main-font;
+        size: 1.7rem;
+        weight: bold;
+    }
+    line-height: 4rem;
+    color: $second-color;
+}
+
+@mixin small-title {
+    font: {
+        family: $main-font;
+        size: 1.6rem;
+        weight: bold;
+    }
+    color: $second-color;
+}
+
+@mixin testimonials-title {
+    font: {
+        family: $main-font;
+        size: 1.8rem;
+        weight: 900;
+    }
+    line-height: 4rem;
+    color: $orange-color;
+}
+
+@mixin big-title {
+    font: {
+        family: $main-font;
+        size: 2.4rem;
+        weight: bold;
+    }
+    color: $second-color;
+    line-height: 2.4rem;
+}
+
+@mixin about-small-title {
+    font: {
+        family: $main-font;
+        size: 2.2rem;
+        weight: bold;
+    }
+    color: $second-color;
+    line-height: 2.8rem;
+}
+
+@mixin topGame-title {
+    font: {
+        family: $main-font;
+        size: 2.6rem;
+    }
+    color: $second-color;
+    ;
+}
+
+@mixin footer-title {
+    font: {
+        family: $main-font;
+        size: 1.6rem;
+        weight: 900;
+    }
+    color: $orange-color;
+    text-align: left;
+}
+
+@mixin footer-subtitle {
+    font: {
+        family: $main-font;
+        size: 1.6rem;
+        weight: 900;
+    }
+    color: $main-color;
+    text-align: left;
+}
+
+@mixin small-paragraph {
+    font: {
+        family: $main-font;
+        size: 1.4rem;
+    }
+    line-height: 2rem;
+    color: $main-color;
+}
+
+@mixin white-small-paragraph {
+    font: {
+        family: $main-font;
+        size: 1.4rem;
+    }
+    line-height: 2.2rem;
+    color: $second-color;
+}
+
+@mixin coundown-title {
+    font: {
+        family: $main-font;
+        size: 2.4rem;
+        weight: 900;
+    }
+    color: $orange-color;
+}
+
+@mixin coundown-subtitle {
+    font: {
+        family: $main-font;
+        size: 1.2rem;
+    }
+    color: $second-color;
+}
+
+@mixin copyright {
+    font: {
+        family: $main-font;
+        size: 1.3rem;
+    }
+    color: $main-color;
+}
+
+@mixin white-paragraph {
+    font: {
+        family: $main-font;
+        size: 1.6rem;
+    }
+    color: $second-color;
+    text-align: center;
+}
+
+@mixin big-buttons {
+    font: {
+        family: $main-font;
+        size: 1.6rem;
+        weight: 900;
+    }
+    color: $second-color;
+    background: $buttons-background;
+}
+
+@mixin violet-buttons {
+    font: {
+        family: $main-font;
+        size: 1.3rem;
+        weight: 900;
+    }
+    color: $second-color;
+    background-color: #664480;
+}
+
+@mixin footer-button {
+    font: {
+        family: $main-font;
+        size: 1.4rem;
+        weight: 900;
+    }
+    color: $second-color;
+    background-color: $buttons-background;
+}
+
+@mixin menu-items-desktop {
+    font: {
+        family: $main-font;
+        size: 1.8rem;
+        weight: bold;
+    }
+    color: $second-color;
+}
+
+@mixin horizon-title-desktop {
+    font: {
+        family: $second-font;
+        size: 9rem;
+        weight: bold;
+    }
+    color: $second-color;
+}
+
+@mixin horizon-subtitle-desktop {
+    font: {
+        family: $second-font;
+        size: 5rem;
+    }
+    color: $second-color;
+}
+
+@mixin horizon-text-desktop {
+    font: {
+        family: $main-font;
+        size: 1.8rem;
+    }
+    color: $second-color;
+}
+
+@mixin features-text-desktop {
+    font: {
+        family: $main-font;
+        size: 1.6rem;
+    }
+    line-height: 2.4rem;
+    color: $main-color;
+}
+
+@mixin about-title {
+    font: {
+        family: $main-font;
+        size: 3.2rem;
+    }
+    line-height: 2.4rem;
+    color: $second-color;
+}
+
+@mixin desktop-buttons {
+    font: {
+        family: $main-font;
+        size: 2rem;
+        weight: 900;
+    }
+    color: $second-color;
+    background: $buttons-background;
+}
+
+.block {
+    display: block;
+}
+
+.underline {
+    font-family: $main-font;
+    color: $second-color;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+.peppermint-slides {
+    display: flex;
+}
+
+.peppermint>div {
+    gap: 1rem;
+}
+
+.old-price {
+    @include old-price;
+}
+
+.new-price {
+    @include new-price;
+    margin-left: 1.2rem;
+}
+
+textarea {
+    height: 4.6rem;
+    width: 19rem;
+    background-color: #18151a;
+    text-align: center;
+    padding-top: 1.3rem;
+    resize: none;
+    font-size: 14px;
+    color: #a28fb2;
+}
+
+@keyframes showMenu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
